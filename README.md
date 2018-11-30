@@ -1,6 +1,8 @@
 # Rabbit Garden Traverser
 ## Usage
 `python main.py`
+
+
 If you want there are the following optional arguments:
 - r: how many rows in the garden.
 - c: how many columns in the garden.
