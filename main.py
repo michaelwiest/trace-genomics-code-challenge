@@ -39,11 +39,11 @@ def get_center(garden_array):
         col_min = int(cols / 2) - 1
         col_max = int(cols / 2) + 1
 
-    # Find the maximum of our center array.
+    # Get this center sub-array
     center_array = garden_array[row_min: row_max,
                                 col_min: col_max]
 
-    # Unravel the index corresponding to the center.
+    # Unravel the index corresponding to the maximum center.
     indices = np.argmax(center_array)
     row_sub_max_index, col_sub_max_index = np.unravel_index(indices,
                                                             center_array.shape)
@@ -64,7 +64,7 @@ def get_next_move_indices(current_row, current_col, garden_array,
     stuff instead. The portion where I pad the sub-array could certainly
     be cleaner but I did what I had in the time provided.
     '''
-    
+
     # Get the bounds for the sub-matrix
     row_lower = max(current_row - row_movement, 0)
     row_upper = min(current_row + row_movement + 1, garden_array.shape[0])
