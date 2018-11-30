@@ -20,4 +20,5 @@ numpy
 argparse
 ```
 
-Code Challenge for Trace Genomics
+## Why did I write this?
+It's a code challenge for Trace Genomics
